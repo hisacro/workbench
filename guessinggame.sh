@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-no=$(ls $(pwd) | wc -w)
+no=$(echo $(ls -a | wc -l) - 2 | bc) 
 guess=-1
 echo "guess no of files"
 
